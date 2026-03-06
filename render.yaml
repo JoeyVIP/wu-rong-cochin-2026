@@ -2,5 +2,5 @@ services:
   - type: web
     name: wu-rong-cochin-ceramics
     env: static
-    buildCommand: npm install && npm run build
-    staticPublishPath: dist
+    buildCommand: echo "Build complete"
+    staticPublishPath: .
