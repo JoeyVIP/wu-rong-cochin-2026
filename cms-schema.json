@@ -1,0 +1,169 @@
+{
+  "version": "1.0",
+  "sections": [
+    {
+      "key": "brand",
+      "title": "品牌資訊",
+      "icon": "Store",
+      "fields": [
+        { "key": "name", "label": "品牌名稱", "type": "text", "required": true },
+        { "key": "tagline", "label": "品牌標語", "type": "text", "required": true }
+      ]
+    },
+    {
+      "key": "hero",
+      "title": "首頁主視覺",
+      "icon": "Image",
+      "fields": [
+        { "key": "title", "label": "主標題", "type": "text", "required": true },
+        { "key": "subtitle", "label": "副標題", "type": "text", "required": true },
+        { "key": "tagline", "label": "標語", "type": "text", "required": true },
+        { "key": "background_image", "label": "背景圖片", "type": "image" }
+      ]
+    },
+    {
+      "key": "lineage",
+      "title": "宗師系譜",
+      "icon": "Users",
+      "fields": [
+        { "key": "title", "label": "區塊標題", "type": "text", "required": true },
+        { "key": "intro", "label": "引言", "type": "textarea", "required": true },
+        { "key": "quote", "label": "引言文字", "type": "text" },
+        {
+          "key": "timeline",
+          "label": "歷史年表",
+          "type": "repeater",
+          "fields": [
+            { "key": "year", "label": "年份", "type": "text", "required": true },
+            { "key": "title", "label": "標題", "type": "text", "required": true },
+            { "key": "description", "label": "說明", "type": "text", "required": true }
+          ]
+        },
+        { "key": "academic_title", "label": "學術權威標題", "type": "text" },
+        { "key": "academic_text", "label": "學術權威內容", "type": "textarea" }
+      ]
+    },
+    {
+      "key": "alchemy",
+      "title": "煉金術工藝",
+      "icon": "Flame",
+      "fields": [
+        { "key": "title", "label": "區塊標題", "type": "text", "required": true },
+        { "key": "intro", "label": "引言", "type": "textarea", "required": true },
+        { "key": "quote", "label": "引言文字", "type": "text" },
+        { "key": "visual_image", "label": "視覺圖片", "type": "image" },
+        {
+          "key": "innovations",
+          "label": "技術創新",
+          "type": "repeater",
+          "fields": [
+            { "key": "icon", "label": "圖示 Emoji", "type": "text", "required": true },
+            { "key": "title", "label": "標題", "type": "text", "required": true },
+            { "key": "description", "label": "說明", "type": "textarea", "required": true }
+          ]
+        },
+        {
+          "key": "process",
+          "label": "燒製流程",
+          "type": "repeater",
+          "fields": [
+            { "key": "title", "label": "步驟標題", "type": "text", "required": true },
+            { "key": "description", "label": "步驟說明", "type": "text", "required": true }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "collections",
+      "title": "系列典藏",
+      "icon": "Package",
+      "fields": [
+        { "key": "title", "label": "區塊標題", "type": "text", "required": true },
+        { "key": "intro", "label": "引言", "type": "textarea", "required": true },
+        {
+          "key": "series",
+          "label": "系列",
+          "type": "repeater",
+          "fields": [
+            { "key": "title", "label": "系列名稱", "type": "text", "required": true },
+            { "key": "subtitle", "label": "英文副標題", "type": "text" },
+            { "key": "description", "label": "系列說明", "type": "textarea", "required": true },
+            { "key": "image", "label": "系列圖片", "type": "image" },
+            {
+              "key": "works",
+              "label": "作品列表",
+              "type": "list",
+              "itemType": "text"
+            }
+          ]
+        },
+        { "key": "quote", "label": "引言文字", "type": "text" },
+        {
+          "key": "patterns",
+          "label": "紋樣學",
+          "type": "repeater",
+          "fields": [
+            { "key": "name", "label": "紋樣名稱", "type": "text", "required": true },
+            { "key": "meaning", "label": "吉祥寓意", "type": "text" },
+            { "key": "detail", "label": "工藝細節", "type": "text" },
+            { "key": "image", "label": "紋樣圖片", "type": "image" }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "bespoke",
+      "title": "私人定製",
+      "icon": "Crown",
+      "fields": [
+        { "key": "title", "label": "區塊標題", "type": "text", "required": true },
+        { "key": "intro", "label": "引言", "type": "textarea", "required": true },
+        { "key": "quote", "label": "引言文字", "type": "text" },
+        { "key": "visual_image", "label": "視覺圖片", "type": "image" },
+        {
+          "key": "services",
+          "label": "定製服務",
+          "type": "repeater",
+          "fields": [
+            { "key": "title", "label": "服務名稱", "type": "text", "required": true },
+            { "key": "description", "label": "服務說明", "type": "textarea", "required": true },
+            {
+              "key": "examples",
+              "label": "範例列表",
+              "type": "list",
+              "itemType": "text"
+            }
+          ]
+        },
+        { "key": "studio_title", "label": "工作室參訪標題", "type": "text" },
+        { "key": "studio_intro", "label": "工作室參訪引言", "type": "textarea" },
+        {
+          "key": "studio_content",
+          "label": "參訪內容",
+          "type": "list",
+          "itemType": "text"
+        },
+        { "key": "studio_location", "label": "地點", "type": "text" },
+        { "key": "studio_time", "label": "時間", "type": "text" },
+        { "key": "studio_capacity", "label": "人數", "type": "text" },
+        { "key": "certificate_title", "label": "收藏保證標題", "type": "text" },
+        { "key": "certificate_intro", "label": "收藏保證引言", "type": "textarea" },
+        {
+          "key": "certificate_items",
+          "label": "保證內容",
+          "type": "list",
+          "itemType": "text"
+        }
+      ]
+    },
+    {
+      "key": "footer",
+      "title": "頁尾",
+      "icon": "Info",
+      "fields": [
+        { "key": "tagline", "label": "標語", "type": "text", "required": true },
+        { "key": "copyright", "label": "版權聲明", "type": "text", "required": true }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="吳榮交趾陶 - 台灣頂級交趾陶藝術，從葉王到吳榮的宗師系譜，寶石釉煉金術工藝">
+  <title>{{brand.name}} Wu Rong Cochin Ceramics - {{brand.tagline}}</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="nav">
+    <div class="container nav-content">
+      <h1 class="brand-title" onclick="scrollToSection('hero')">{{brand.name}}</h1>
+
+      <!-- Desktop Navigation -->
+      <div class="nav-links">
+        <button onclick="scrollToSection('lineage')" class="nav-link">宗師系譜</button>
+        <button onclick="scrollToSection('alchemy')" class="nav-link">煉金術工藝</button>
+        <button onclick="scrollToSection('collections')" class="nav-link">系列典藏</button>
+        <button onclick="scrollToSection('bespoke')" class="nav-link">私人定製</button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        <span id="menu-icon">☰</span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-nav" class="mobile-nav">
+      <button onclick="scrollToSection('lineage')" class="mobile-nav-link">宗師系譜</button>
+      <button onclick="scrollToSection('alchemy')" class="mobile-nav-link">煉金術工藝</button>
+      <button onclick="scrollToSection('collections')" class="mobile-nav-link">系列典藏</button>
+      <button onclick="scrollToSection('bespoke')" class="mobile-nav-link">私人定製</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="art-placeholder hero-bg"></div>
+    <div class="hero-content">
+      <h1 class="hero-title fade-in">{{hero.title}}</h1>
+      <p class="hero-subtitle fade-in">{{hero.subtitle}}</p>
+      <p class="hero-tagline fade-in">{{hero.tagline}}</p>
+    </div>
+    <div class="scroll-indicator">↓</div>
+  </section>
+
+  <!-- Lineage Section -->
+  <section id="lineage" class="section-light">
+    <div class="container">
+      <!-- Header -->
+      <div class="section-header fade-in">
+        <h2 class="section-title">{{lineage.title}}</h2>
+        <p class="section-intro">{{lineage.intro}}</p>
+      </div>
+
+      <!-- Quote Block -->
+      <div class="quote-block fade-in">
+        <p class="quote-text">"{{lineage.quote}}"</p>
+      </div>
+
+      <!-- Timeline -->
+      <div class="timeline-section fade-in">
+        <h3 class="subsection-title">歷史年表</h3>
+        <div class="timeline">
+          {{#lineage.timeline}}
+          <div class="timeline-item fade-in">
+            <div class="timeline-year">{{year}}</div>
+            <h4 class="timeline-title">{{title}}</h4>
+            <p class="timeline-desc">{{description}}</p>
+          </div>
+          {{/lineage.timeline}}
+        </div>
+      </div>
+
+      <!-- Academic Section -->
+      <div class="academic-section fade-in">
+        <h3 class="subsection-title">{{lineage.academic_title}}</h3>
+        <p class="academic-text">{{lineage.academic_text}}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alchemy Section -->
+  <section id="alchemy" class="section-dark">
+    <div class="container">
+      <!-- Header -->
+      <div class="section-header fade-in">
+        <h2 class="section-title">{{alchemy.title}}</h2>
+        <p class="section-intro">{{alchemy.intro}}</p>
+      </div>
+
+      <!-- Visual Focus -->
+      <div class="visual-focus fade-in">
+        <div class="art-placeholder visual-image"></div>
+        <p class="quote-text">"{{alchemy.quote}}"</p>
+      </div>
+
+      <!-- Innovations -->
+      <div class="innovations-section fade-in">
+        <h3 class="subsection-title">技術護城河</h3>
+        <div class="innovations-grid">
+          {{#alchemy.innovations}}
+          <div class="innovation-card fade-in">
+            <div class="innovation-icon">{{icon}}</div>
+            <h4 class="innovation-title">{{title}}</h4>
+            <p class="innovation-desc">{{description}}</p>
+          </div>
+          {{/alchemy.innovations}}
+        </div>
+      </div>
+
+      <!-- Process -->
+      <div class="process-section fade-in">
+        <h3 class="subsection-title">燒製流程</h3>
+        <div class="process-steps">
+          {{#alchemy.process}}
+          <div class="process-step">
+            <h4 class="process-step-title">{{title}}</h4>
+            <p class="process-step-desc">{{description}}</p>
+          </div>
+          {{/alchemy.process}}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collections Section -->
+  <section id="collections" class="section-light">
+    <div class="container">
+      <!-- Header -->
+      <div class="section-header fade-in">
+        <h2 class="section-title">{{collections.title}}</h2>
+        <p class="section-intro">{{collections.intro}}</p>
+      </div>
+
+      <!-- Series -->
+      <div class="series-container">
+        {{#collections.series}}
+        <div class="series-block fade-in">
+          <div class="series-image">
+            <div class="art-placeholder"></div>
+          </div>
+          <div class="series-content">
+            <h3 class="series-title">{{title}}</h3>
+            <p class="series-subtitle">{{subtitle}}</p>
+            <p class="series-desc">{{description}}</p>
+            <div class="series-works">
+              {{#works}}
+              <span class="work-tag">{{.}}</span>
+              {{/works}}
+            </div>
+          </div>
+        </div>
+        {{/collections.series}}
+      </div>
+
+      <!-- Quote Block -->
+      <div class="quote-block fade-in">
+        <p class="quote-text">"{{collections.quote}}"</p>
+      </div>
+
+      <!-- Patterns -->
+      <div class="patterns-section fade-in">
+        <h3 class="subsection-title">紋樣學</h3>
+        <p class="patterns-intro">微距視角下的吉祥寓意與工藝複雜度</p>
+        <div class="patterns-grid">
+          {{#collections.patterns}}
+          <div class="pattern-card fade-in">
+            <div class="art-placeholder pattern-image"></div>
+            <h4 class="pattern-name">{{name}}</h4>
+            <p class="pattern-meaning">{{meaning}}</p>
+            <p class="pattern-detail">{{detail}}</p>
+          </div>
+          {{/collections.patterns}}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bespoke Section -->
+  <section id="bespoke" class="section-dark">
+    <div class="container">
+      <!-- Header -->
+      <div class="section-header fade-in">
+        <h2 class="section-title">{{bespoke.title}}</h2>
+        <p class="section-intro">{{bespoke.intro}}</p>
+      </div>
+
+      <!-- Visual Focus -->
+      <div class="visual-focus fade-in">
+        <div class="art-placeholder visual-image-large"></div>
+        <p class="quote-text">"{{bespoke.quote}}"</p>
+      </div>
+
+      <!-- Services -->
+      <div class="services-section fade-in">
+        <h3 class="subsection-title">定製服務</h3>
+        <div class="services-list">
+          {{#bespoke.services}}
+          <div class="service-item fade-in">
+            <h4 class="service-title">{{title}}</h4>
+            <p class="service-desc">{{description}}</p>
+            <div class="service-examples">
+              {{#examples}}
+              <span class="example-tag">{{.}}</span>
+              {{/examples}}
+            </div>
+          </div>
+          {{/bespoke.services}}
+        </div>
+      </div>
+
+      <!-- Studio Visit -->
+      <div class="studio-section fade-in">
+        <h3 class="subsection-title">{{bespoke.studio_title}}</h3>
+        <div class="studio-content">
+          <p class="studio-intro">{{bespoke.studio_intro}}</p>
+          <div class="studio-details">
+            <div class="studio-col">
+              <h5 class="studio-col-title">參訪內容</h5>
+              <ul class="studio-list">
+                {{#bespoke.studio_content}}
+                <li>{{.}}</li>
+                {{/bespoke.studio_content}}
+              </ul>
+            </div>
+            <div class="studio-col">
+              <h5 class="studio-col-title">預約資訊</h5>
+              <p class="studio-info">{{bespoke.studio_location}}</p>
+              <p class="studio-info">{{bespoke.studio_time}}</p>
+              <p class="studio-info">{{bespoke.studio_capacity}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate -->
+      <div class="certificate-section fade-in">
+        <h3 class="subsection-title">{{bespoke.certificate_title}}</h3>
+        <div class="certificate-content">
+          <div class="certificate-text">
+            <p class="certificate-intro">{{bespoke.certificate_intro}}</p>
+            <h5 class="certificate-col-title">保證內容</h5>
+            <ul class="certificate-list">
+              {{#bespoke.certificate_items}}
+              <li>{{.}}</li>
+              {{/bespoke.certificate_items}}
+            </ul>
+          </div>
+          <div class="certificate-visual">
+            <div class="art-placeholder"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-tagline">{{footer.tagline}}</p>
+      <p class="footer-copyright">{{footer.copyright}}</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

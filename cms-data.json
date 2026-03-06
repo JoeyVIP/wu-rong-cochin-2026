@@ -1,0 +1,187 @@
+{
+  "brand": {
+    "name": "吳榮交趾陶",
+    "tagline": "以心相交、以火交心"
+  },
+  "hero": {
+    "title": "燒出台灣靈魂的火",
+    "subtitle": "吳榮與交趾陶的文化突圍",
+    "tagline": "以心相交、以火交心",
+    "background_image": "assets/stock/hero.jpg"
+  },
+  "lineage": {
+    "title": "宗師系譜",
+    "intro": "從葉王到吳榮，這不僅是技藝的傳承，更是台灣交趾陶文化的歷史護城河。三代匠師的學術權威，將寶石釉的煉金術延續至當代，成就國際認可的工藝高峰。",
+    "quote": "承襲葉王國寶之魂，燒出當代台灣之光",
+    "timeline": [
+      {
+        "year": "清代",
+        "title": "葉王",
+        "description": "台灣交趾陶藝術奠基者，首件私人國寶持有者"
+      },
+      {
+        "year": "1981",
+        "title": "師從林添木",
+        "description": "延續寶石釉命脈，承傳葉王絕學"
+      },
+      {
+        "year": "1993",
+        "title": "獲民族工藝獎",
+        "description": "作品《東海龍王》確立藝術界地位"
+      },
+      {
+        "year": "1995",
+        "title": "康乃爾大學獻禮",
+        "description": "《九龍如意》獲選為李登輝總統訪美禮品"
+      },
+      {
+        "year": "2017",
+        "title": "文化部登錄保存者",
+        "description": "傳統藝術（交趾陶）國家級認證"
+      },
+      {
+        "year": "2024",
+        "title": "史懷哲藝術與科學獎章",
+        "description": "國際認證工藝科學與藝術卓越貢獻"
+      }
+    ],
+    "academic_title": "學術權威",
+    "academic_text": "大師碩士論文《吳榮交趾陶匠藝研究》系統性地記錄並分析了這門古老技藝的當代變革，成為交趾陶研究的重要學術文獻，確立了吳榮「學者型工藝家」的國際地位。"
+  },
+  "alchemy": {
+    "title": "煉金術工藝",
+    "intro": "這不是傳統工藝，而是火與礦物的化學實驗。吳榮將交趾陶提升為一門精確的科學，每一次燒製都是對溫度、時間、材料的極致掌控。",
+    "quote": "1300°C 高溫下的完美控制",
+    "visual_image": "assets/stock/alchemy.jpg",
+    "innovations": [
+      {
+        "icon": "💎",
+        "title": "寶石釉",
+        "description": "融合西方琺瑯的剔透與東方氣韻，超過 100 種釉色的研發能力，每一種都是獨一無二的化學配方。"
+      },
+      {
+        "icon": "🌿",
+        "title": "無鉛釉藥",
+        "description": "率先實現無鉛釉藥與高溫燒製的化學突破，既保護環境，又提升作品的永久保存性。"
+      },
+      {
+        "icon": "⚡",
+        "title": "奈米黏土",
+        "description": "創新應用奈米黏土賦予作品極致強度，實現《齊天大聖》、《雲童》等作品中突破重力限制的動態張力。"
+      }
+    ],
+    "process": [
+      {
+        "title": "1. 雕塑成型",
+        "description": "精密的手工雕塑，每一個細節都經過反覆推敲。"
+      },
+      {
+        "title": "2. 釉藥調配",
+        "description": "根據作品需求，調配獨特的寶石釉配方。"
+      },
+      {
+        "title": "3. 高溫燒製",
+        "description": "1300°C 高溫窯燒，嚴格控制溫度曲線與氧化還原氣氛。"
+      },
+      {
+        "title": "4. 冷卻定型",
+        "description": "緩慢冷卻，確保釉色穩定與結構完整。"
+      }
+    ]
+  },
+  "collections": {
+    "title": "系列典藏",
+    "intro": "每一件作品都是文化資產，承載著深刻的哲學思考與藝術表達。我們將單品提升至系列高度,透過學術化的藝術分類，賦予作品永恆的文化價值。",
+    "series": [
+      {
+        "title": "經典神話",
+        "subtitle": "Classic Mythology",
+        "description": "以《齊天大聖》為代表，融合戲曲「五法」（手、眼、身、步、法）的身段張力，捕捉神話人物的能量爆發瞬間。",
+        "image": "assets/stock/series1.jpg",
+        "works": ["齊天大聖", "東海龍王", "九龍如意"]
+      },
+      {
+        "title": "當代微縮",
+        "subtitle": "Modern Miniature",
+        "description": "《雲童》系列（春、夏、秋、冬）論述「虛與實」的哲學結合，呈現生命與時光流逝的輪迴循環。",
+        "image": "assets/stock/series2.jpg",
+        "works": ["雲童·春", "雲童·夏", "雲童·秋", "雲童·冬"]
+      },
+      {
+        "title": "在地敘事",
+        "subtitle": "Local Narrative",
+        "description": "《相親》、《出嫁》等作品轉譯台灣女性生命歷程，鳳袍紋樣的細緻度展現工藝的極致追求。",
+        "image": "assets/stock/series3.jpg",
+        "works": ["相親", "出嫁", "台灣女性生命圖像"]
+      }
+    ],
+    "quote": "每一個細節都是匠心",
+    "patterns": [
+      {
+        "name": "雲紋",
+        "meaning": "吉祥如意，步步高升",
+        "detail": "每一朵雲都經過手工雕刻，立體層次分明",
+        "image": "assets/stock/pattern1.jpg"
+      },
+      {
+        "name": "龍鱗",
+        "meaning": "權威尊貴，王者之氣",
+        "detail": "1mm 精度的鱗片排列，展現極致工藝",
+        "image": "assets/stock/pattern2.jpg"
+      },
+      {
+        "name": "鳳袍",
+        "meaning": "華貴優雅，女性力量",
+        "detail": "超過 50 種紋樣組合，每件獨一無二",
+        "image": "assets/stock/pattern3.jpg"
+      }
+    ]
+  },
+  "bespoke": {
+    "title": "私人定製",
+    "intro": "針對高淨值藏家（HNWIs）與企業客戶，我們提供從概念設計到完成交付的全程定製服務。每一件作品都是空間與文化的完美結合。",
+    "quote": "從構思到燒製，每一步都是藝術",
+    "visual_image": "assets/stock/bespoke.jpg",
+    "services": [
+      {
+        "title": "企業藝術牆",
+        "description": "為企業總部、高端會所打造大型藝術壁堵，展現品牌的文化底蘊與空間氣勢。",
+        "examples": ["齊天大聖大型壁堵", "九龍壁", "鳳凰來儀"]
+      },
+      {
+        "title": "高端贈禮",
+        "description": "為政商界、外交場合訂製專屬贈禮，每件作品都是獨一無二的文化象徵。",
+        "examples": ["國禮訂製", "企業紀念品", "收藏級禮品"]
+      },
+      {
+        "title": "私人收藏",
+        "description": "針對藏家需求，創作限量或單件作品，提供完整的收藏證書與保養指導。",
+        "examples": ["限量典藏", "單件委託", "系列收藏"]
+      }
+    ],
+    "studio_title": "藝術朝聖地",
+    "studio_intro": "嘉義新港工作室採預約制開放，藏家可親臨現場感受交趾陶的創作過程，與吳榮大師面對面交流，深入理解每件作品背後的故事與工藝。",
+    "studio_content": [
+      "• 工作室導覽",
+      "• 創作過程解說",
+      "• 大師面對面交流",
+      "• 作品鑑賞指導"
+    ],
+    "studio_location": "地點：嘉義縣新港鄉",
+    "studio_time": "時間：預約制（需提前 7 天預約）",
+    "studio_capacity": "人數：每場限 6 人以內",
+    "certificate_title": "收藏保證",
+    "certificate_intro": "每一件作品都附有吳榮大師親筆簽名的頂級象牙卡保證書，記錄作品的創作年份、釉色配方、尺寸規格等詳細資訊，賦予每件作品獨一無二的數位身分證明。",
+    "certificate_items": [
+      "✓ 大師親筆簽名",
+      "✓ 作品編號與創作日期",
+      "✓ 釉色配方記錄",
+      "✓ 尺寸與重量資訊",
+      "✓ 永久保養指導"
+    ]
+  },
+  "footer": {
+    "tagline": "以心相交、以火交心",
+    "copyright": "© 2026 吳榮交趾陶 Wu Rong Cochin Ceramics. All Rights Reserved."
+  }
+}
