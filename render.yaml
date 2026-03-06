@@ -1,6 +1,5 @@
 services:
   - type: web
-    name: wu-rong-cochin-ceramics
+    name: wu-rong-cochin-2026
     env: static
-    buildCommand: mkdir -p public && cp index.html styles.css script.js public/ && cp -r assets public/ 2>/dev/null || true
     staticPublishPath: public
