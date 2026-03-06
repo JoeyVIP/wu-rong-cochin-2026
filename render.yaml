@@ -2,5 +2,5 @@ services:
   - type: web
     name: wu-rong-cochin-ceramics
     env: static
-    buildCommand: echo "Build complete"
-    staticPublishPath: .
+    buildCommand: mkdir -p public && cp index.html styles.css script.js public/ && cp -r assets public/ 2>/dev/null || true
+    staticPublishPath: public
